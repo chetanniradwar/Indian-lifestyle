@@ -1,0 +1,50 @@
+path{
+    fill: rgb(224, 101, 101);
+    stroke: rgb(247, 247, 247);
+    stroke-width: 1.52835px;
+
+    }
+  path:hover
+{
+    fill:blue;
+    cursor: pointer;
+   
+}
+#svg2
+{
+    
+border:2px solid purple;
+}
+/* #svg2:hover
+{
+    transform: scale(10);
+} */
+/* tool tip */
+.tooltip1 {
+    text-decoration:none;
+    position:relative;
+    color: black;
+}
+.tooltip1 span {
+    display:none;
+    position:fixed;
+    overflow:hidden;
+}
+/* .tooltip1:hover span {
+    display:block;
+    
+} */
+
+
+#svg2 {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0 0;
+    transition: transform 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: translate(0,0) scale(1);
+}
+#item {
+    position: absolute;
+}
