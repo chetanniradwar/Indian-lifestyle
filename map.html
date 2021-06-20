@@ -13,7 +13,6 @@
 <body>
 
     <div id="tooltipId" class="tooltip1" href="http://www.google.com/">
-        Google
         <span id="tooltip-span">
             <div id="tooltip-content">
                 <div class="card" style="width: 18rem;">
@@ -28,19 +27,30 @@
             </div>
         </span>
     </div>
-
+    <div  id="iframe-div">
+    <iframe id="play-video" class="" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="">
+    </iframe>
+    <button id="close-btn" class="btn"onclick= closeIframe()>&cross;</button>
+    </div>
     
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col"> -->
+                <svg id="map-svg">
+                    <use href="#indian-map"></use>
+                </svg>
+<!--             
+            </div>
+        </div>
+    </div> -->
 
-    <svg id="map-svg">
-        <use href="#indian-map"></use>
-    </svg>
-
+   
 
     <symbol id="indian-map">
         <svg xmlns:mapsvg="http://mapsvg.com" xmlns:dc="http://purl.org/dc/elements/1.1/"
             xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-            xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg2"
-            height="695.70178" width="611.85999" mapsvg:geoViewBox="68.184010 37.084109 97.418146 6.753659">
+            xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg2"  
+            height="80vh"width="650px" mapsvg:geoViewBox="68.184010 37.084109 97.418146 6.753659">
 
             <metadata id="metadata44">
                 <rdf:RDF>

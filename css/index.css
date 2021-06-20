@@ -1,0 +1,19 @@
+body{
+    background-image: url('../media/indianlifestyle.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+h1,p{
+    color: aliceblue;
+    margin: auto;
+    text-align: center;
+}
+#container-1
+{
+height: 100Vh;
+/* width: 100vw; */
+border: 3px solid pink;
+}

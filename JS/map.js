@@ -105,30 +105,67 @@ function hideCardData(tag) {
     }
 }
 
+var iframe =document.getElementById("iframe-div")
+var svg2=document.getElementById("svg2")
+$("path").click(dothis)
+function dothis()
+{
+   
+var videoTag= document.getElementById("play-video")
+iframe.style.display="block"
 
+ svg2.style.display='none'
+// var body=document.getElementsByTagName("body")
+// body.style.background="rgba(0, 0, 0, 0.582)"
 
+switch (this.id) {
+    case "IN-AN":
+        videoTag.src =""
+        
+        break;
+    case "IN-AP":
+        videoTag.src ="https://www.youtube.com/embed/_e01TCaGsQg"
+        break;
+}
+}
 
+function closeIframe()
+{
+iframe.style.display="none"
+svg2.style.display="block"
 
-var current = {x: 0, y: 0, zoom: 1},
-    con = document.getElementById('svg2');
-
-window.onclick = function(e) {
-    var coef = e.shiftKey || e.ctrlKey ? 0.5 : 10,
-        oz = current.zoom,
-        nz = (current.zoom *= coef),
-        /// calculate click at current zoom
-        ix = (e.clientX - current.x) / oz,
-        iy = (e.clientY - current.y) / oz,
-        /// calculate click at new zoom
-        nx = ix * nz,
-        ny = iy * nz,
-        /// move to the difference
-        cx = (current.x = ix - nx),
-        cy = (current.y = iy - ny)
-    ;
-    /// make sure we translate before scale!
-    con.style.transform
-        = 'translate('+cx+'px, '+cy+'px) '
-        + 'scale('+nz+')'
-    ;
-};
+}
+// var current = {x: 0, y: 0, zoom: 1},
+//     con = document.getElementById('svg2');
+    
+// window.onclick = function(e) {
+//     var coef = e.shiftKey || e.ctrlKey ? 0.5 : 10,
+//         oz = current.zoom,
+//         nz = current.zoom * coef,
+//         /// offset of container
+//         ox = 300,
+//         oy = 42,
+//         /// mouse cords
+//         mx = e.clientX - ox,
+//         my = e.clientY - oy,
+//         /// calculate click at current zoom
+//         ix = (mx - current.x) / oz,
+//         iy = (my - current.y) / oz,
+//         /// calculate click at new zoom
+//         nx = ix * nz,
+//         ny = iy * nz,
+//         /// move to the difference
+//         /// make sure we take mouse pointer offset into account!
+//         cx = (ix + (mx - ix) - nx),
+//         cy = (iy + (my - iy) - ny)
+//     ;
+//     // update current
+//     current.zoom = nz;
+//     current.x = cx;
+//     current.y = cy;
+//     /// make sure we translate before scale!
+//     con.style.transform
+//         = 'translate('+cx+'px, '+cy+'px) '
+//         + 'scale('+nz+')'
+//     ;
+// };
