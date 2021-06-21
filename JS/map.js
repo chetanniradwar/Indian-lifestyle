@@ -253,21 +253,25 @@ $("path").click(dothis)
 function dothis()
 {
    
-var videoTag= document.getElementById("play-video")
-iframe.style.display="block"
 
- svg2.style.display='none'
 // var body=document.getElementsByTagName("body")
 // body.style.background="rgba(0, 0, 0, 0.582)"
 
 switch (this.id) {
-    case "IN-AN":
-        videoTag.src ="https://www.youtube.com/embed/h16HA4XjyD8"
+    case "IN-UP":
+        videoTag.src ="https://www.youtube.com/embed/8UpMGGmO69k"
         break;
-    case "IN-AP":
+    case "IN-AR":
         videoTag.src ="https://www.youtube.com/embed/_e01TCaGsQg"
         break;
+    case "IN-KL":
+        videoTag.src ="https://www.youtube.com/embed/nMDeCS8jkJA"
+        break;
 }
+var videoTag= document.getElementById("play-video")
+iframe.style.display="block"
+
+ svg2.style.display='none'
 }
 
 function closeIframe()
