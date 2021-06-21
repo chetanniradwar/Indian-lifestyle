@@ -93,7 +93,7 @@ function showCardData() {
             //console.log("hello")
             break;
         case "IN-HP":
-            cardImg.src = "../media/Himachal_Pradesh.jpg"
+            cardImg.src = "../media/Himachal.jpg"
             cardHead.innerHTML = "Himachal Pradesh"
             cardSummary.innerHTML = "Himachal Pradesh is home to the largest glacier in Asia,The Shigri Glacier.The Manali – Leh National Highway is famed for being the highest motor able road in the world.Many outdoor activities such as rock climbing, mountain biking, trekking, rafting, and heli-skiing are popular tourist attractions."
             //console.log("hello")
@@ -245,9 +245,6 @@ function hideCardData(tag) {
     var tooltipTag = document.getElementById("tooltip-span")
     tooltipTag.style.display = "none";
 
-    if (tag.id == "IN-AN") {
-
-    }
 }
 
 var iframe =document.getElementById("iframe-div")
