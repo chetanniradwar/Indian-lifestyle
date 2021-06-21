@@ -73,9 +73,7 @@ svg{
     top:50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    transform-origin: 0 0 0;
-    transition:ease-in-out 2s;
-    transition-timing-function: ease-in-out;
+   
     
 }
 #iframe-div
@@ -85,6 +83,9 @@ height: 100vh;
 
 border: 2px solid gold;
 background-color: rgba(0, 0, 0, 0.897);
+transform-origin: 0 0 0;
+transition:ease-in-out 2s;
+transition-timing-function: ease-in-out;
 }
 
 #close-btn
