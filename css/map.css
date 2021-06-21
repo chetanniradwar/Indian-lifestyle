@@ -1,6 +1,6 @@
-body{
-    overflow: hidden;
-}
+/* body{
+    overflow: hidden; 
+}*/
 path{
     fill: rgb(224, 101, 101);
     stroke: rgb(247, 247, 247);
@@ -17,7 +17,7 @@ path{
 {
   
     display: block; 
-border:2px solid purple;
+/* border:2px solid purple; */
 }
 svg{
     display: block;
@@ -81,7 +81,7 @@ svg{
 display: none;
 height: 100vh;
 
-border: 2px solid gold;
+/* border: 2px solid gold; */
 background-color: rgba(0, 0, 0, 0.897);
 transform-origin: 0 0 0;
 transition:ease-in-out 2s;
