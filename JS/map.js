@@ -253,7 +253,7 @@ $("path").click(dothis)
 function dothis()
 {
    
-
+    var videoTag= document.getElementById("play-video")
 // var body=document.getElementsByTagName("body")
 // body.style.background="rgba(0, 0, 0, 0.582)"
 
@@ -268,7 +268,7 @@ switch (this.id) {
         videoTag.src ="https://www.youtube.com/embed/nMDeCS8jkJA"
         break;
 }
-var videoTag= document.getElementById("play-video")
+
 iframe.style.display="block"
 
  svg2.style.display='none'
