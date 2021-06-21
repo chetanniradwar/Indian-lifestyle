@@ -32,8 +32,8 @@ function showCardData() {
             //console.log("hello")
             break;
         case "IN-AR":
-            cardImg.src = "../media/Arunachal_Pradesh.
-            jpg"
+            cardImg.src = "../media/Arunachal_Pradesh.jpg"
+           
             cardHead.innerHTML = "Arunachal Pradesh"
             cardSummary.innerHTML = "Arunachal Pradesh constitutes a mountainous area in the extreme northeastern part of the country.It means Land of the Dawn-Lit Mountains, which is the sobriquet for the state in Sanskrit. The state is also known as the Orchid State of India or the Paradise of the Botanists. "
             //console.log("hello")
